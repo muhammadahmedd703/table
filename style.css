@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d1117;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #58a6ff;
+justify-items: center; 
+display:center;
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.element {
+  background: #161b22;
+  border: 2px solid #30363d;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.element:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #58a6ff;
+}
+
+.number {
+  display: block;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+.symbol {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #58a6ff;
+}
+
+.name {
+  font-size: 0.9rem;
+  color: #c9d1d9;
+}
+
+/* Custom colors for different element types */
+.hydrogen { border-color: #ff7b72; }
+.helium { border-color: #a371f7; }
+.lithium { border-color: #7ee787; }
+.beryllium { border-color: #79c0ff; }
+.carbon { border-color: #ffa657; }
+.oxygen { border-color: #f85149; }
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
